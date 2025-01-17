@@ -1,0 +1,123 @@
+---
+title: "Analisis Pengaruh Hilirisasi Industri Nikel terhadap Ekspor Nikel"
+subtitle: "Metode Penelitian : Politeknik APP Jakarta"
+author: "Aliya Rizki"
+date: "2025-01-14"
+number-sections: true
+format:
+  html: default
+  docx: default
+---
+
+![---](poltekapp.jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Nikel merupakan salah satu bahan tambang yang memiliki nilai jual tinggi di pasar internasional. Hal ini karen nikel memiliki segudang manfaat di kehidupan sehari-hari. Salah satunya yaitu digunakan untuk pembuatan logam anti karat, campuran dalam pembuatan stainless steel, baterai dan berbagai jenis barang lainnya. Biji nikel didapatkan dari endapan nikel laterit yang terbentuk akibat pelapukan batuan ultramafik yang mengandung nikel 0,2 - 0,4%. Nikel Laterit banyak ditemukan di daerah tropis karena iklim di daerah tersebut mendukung terjadinya pelapukan selain topografi, drainase, tenaga tektonik, batuan induk dan struktur geologi. Indonesia merupakan salah satu penghasil nikel terbesar di dunia. Daerah yang menghasilkan banyak bijih nikel antara lain Sulawesi Tenggara, Sulawesi Selatan, Halmahera, Karena nikel adalah sumber daya alam yang langka, banyak negara yang tidak memilikinya harus mengimpornya dari negara produsen. Namun, negara produsen harus memastikan tidak ada kelangkaan karena nikel adalah sumber daya yang tidak dapat diperbaharui.
+
+Sebagai negara yang memiliki banyak sumber daya alam, Indonesia dianggap memiliki kandungan nikel yang tinggi. Menurut pemetaan yang dilakukan oleh Badan Geologi pada tahun 2020, Indonesia memiliki sumber daya bijih nikel sebesar 11.887 juta ton (terbukti 3.360 juta ton dan terikira 986 juta ton), dan cadangan bijih sebesar 4.346 juta ton (terbukti 3.360 juta ton dan terikira 986 juta ton). Farrokhpay et al. (2019) menyatakan bahwa, dengan konsumsi sekitar 2 juta ton per tahun, nikel yang merupakan logam penting yang bersumber dari sulfida dan laterit, memiliki permintaan yang tinggi di pasar internasional. Nilai guna yang tinggi dan jumlah penggunaan yang signifikan menjadi penyebabnya.Beberapa negara harus melakukan perdagangan antar negara karena kekurangan nikel. Indonesia bertindak sebagai produsen dalam hal ini dan mengekspor bijih nikel ke berbagai negara. Indonesia memiliki sistem perekonomian terbuka, sebagai akibatnya, Indonesia memiliki hubungan internasional melalui perdagangan dan transaksi internasional dengan negara lain (Mardiana et al., 2021). Perdagangan bebas akan sangat membantu pertumbuhan ekonomi negara, terutama bagi negara berkembang seperti Indonesia, yang memiliki banyak sumber daya alam (Rahayu & Sugianto, 2020).
+
+Ekspor nikel diatur kembali oleh pemerintah Indonesia dengan mengeluarkan Peraturan Kementerian ESDM Nomor 5 dan 6 Tahun 2017. Selanjutnya, pemerintah mengubah peraturan tersebut dengan mempercepat larangan ekspor bijih, yang sebelumnya diberlakukan pada tahun 2022, tetapi sudah berlaku pada awal 2020. Meskipun keputusan ini telah membuat negara importir bijih nikel, terutama di kawasan Uni Eropa, merasa dirugikan, peraturan ini menunjukkan keyakinan pemerintah Indonesia (Putri, 2021). Di mana Indonesia telah melarang produksi bijih nikel sejak tahun 2014, yang menyebabkan harga bijih nikel menjadi semakin tidak stabil (Widiatedja, 2021). Permintaan di negara – negara berkembang ini memiliki potensi untuk meningkat pesat untuk bahan – bahan ini melalui percepatan industrialisasi serta melalui populasi dan pertumbuhan ekonomi. Dengan demikian, daerah-daerah tersebut berpotensi mengalami peningkatan konsumsi material (van Vuuren et al., 1999 ; Nakajima et al., 2018). Namun Adanya perubahan beraturan secara berkala akan berdampak pada kinerja ekspor bijih nikel Indonesia terutama pada nilai indeks keunggulan komparatif. Indonesia sebagai pemilik cadangan nikel terbesar harusmampu mengenali komoditas ekspor yang unggul. Terlebih bahwa dengan mengetahui keunggulan kompetitif menjadi sangat penting untuk menentukan arah masa depan suatu negara (Hanafi et al., 2019).
+
+### Rumusan masalah
+
+1.  Bagaimana pengaruh hilirisasi industri nikel terhadap nilai dan volume ekspor nikel Indonesia?
+
+2.  Bagaimana kondisi ekspor nikel bahan mentah sebelum adanya kebijakan hilirisasi?
+
+3.  Apakah implementasi kebijakan hilirisasi industri nikel memberikan dampak positif terhadap peningkatan daya saing ekspor nikel di pasar internasional?
+
+### Tujuan dan manfaat penelitian
+
+Penelitian ini bertujuan untuk menganalisis secara mendalam dampak kebijakan hilirisasi industri nikel terhadap kinerja ekspor nikel Indonesia, baik dalam aspek volume, nilai, maupun struktur komoditas ekspor.Penelitian ini akan mengukur sejauh mana hilirisasi berhasil meningkatkan nilai tambah pada rantai pasok nikel, termasuk kontribusinya terhadap pendapatan ekspor dan devisa negara. Ekspor nikel mentah atau produk hilirisasi nikel secara langsung berkaitan dengan pendapatan negara; namun, harga komoditas ini sering sangat berubah karena permintaan global dan faktor lain di pasar.
+
+### Package
+
+Ini tidak wajib ada di tulisan anda tapi anda dapat menunjukkan Packages yang digunakan antara lain sebagai berikut:
+
+```{r}
+#| warning: false
+#| echo: true
+library(tidyverse)
+library(readxl)
+library(WDI) # tambahkan library lain jika diperlukan
+```
+
+## Studi pustaka
+
+Menurut Solihin dan Sudirja (2007), sumber daya alam yang kaya di Indonesia harus dikembangkan dan dioptimalkan untuk mendukung dan mendukung pembangunan berkelanjutan negara. Oleh karena itu, menurut Putra dkk. (2015), pemanfaatan sumber daya alam tersebut harus mempertimbangkan konservasi dan upaya untuk kelestarian fungsi ekosistemnya. Menurut Muliawan dkk. (2009), lokasi keterdapatan, kemungkinan, dan kondisi sumber daya alam yang ada di setiap wilayah harus disusun dalam bentuk neraca sumber daya alam (NSDA), yang terdiri dari empat bagian: neraca sumber daya lahan (NSDL). Neraca sumber daya mineral (NSDM) adalah neraca yang berkaitan dengan industri pertambangan mineral. NSDM mengandung informasi tentang ukuran sumber daya, jumlah yang telah digunakan (diproduksi), dan jumlah cadangan yang masih tersisa atau saldo. Semua informasi ini dapat diubah menjadi nilai uang berdasarkan harga terbaru yang tersedia saat ini. 
+
+Menurut Prasadewo dkk. (2016), nilai ekonomis sumber daya, bagian dari laporan keuangan, berfungsi sebagai dasar untuk membuat keputusan bisnis. Jarwanto (2008) menyatakan bahwa struktur neraca terdiri dari dua pos: aktiva (aset) dan pasiva (pemanfaatan/eksploitasi). Menurut Tivianto dkk. (2013), pada pos aktiva tercatat sumber daya awal, yang merupakan total sumber daya terkira, terindikasi, tereka, dan hipotetik, ditambah sumber daya hasil eksplorasi terbaru. Pada pos pasiva, tercatat pemanfaatan, yang mengurangi jumlah sumber daya yang terdiri dari produksi, bencana, pengalih, dan pengalih.
+## Metode penelitian
+
+### Data
+
+| Year | country   | partners |   trade value   |
+|------|:----------|---------:|:---------------:|
+| 2017 | indonesia |    china |  \$149,971,505  |
+| 2018 | indonesia |    china |  \$611,883,269  |
+| 2019 | indonesia |    china | \$1,051,604,329 |
+
+: Demonstration of pipe table syntaX
+
+
+### Metode analisis
+
+Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini merbaksud mencari hubungan antara hwy dan cty. Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah hwy dan $x_t$ adalah cty.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+| year | country   | partners | Ekspor barang mentah | Ekspor barang jadi |
+|------|:----------|---------:|:--------------------:|:-------------------|
+| 2017 | Indonesia |    China |    \$149,971,505     | \$358,502          |
+| 2018 | Indonesia |    China |    \$611,883,269     | \$138,333          |
+| 2019 | Indonesia |    China |   \$1,051,604,329    | \$25,599           |
+
+: Demonstration of pipe table syntax
+
+### Analisis masalah
+
+Call:
+lm(formula = Y ~ X, data = DATA_1)
+
+Residuals:
+     1      2      3 
+ 16130 -33074  16944 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|) 
+              
+(Intercept)  3.979e+05  4.497e+04   8.848   0.0716
+.
+
+X           -3.701e-04  6.354e-05  -5.825   0.1082  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 40510 on 1 degrees of freedom
+Multiple R-squared:  0.9714,	Adjusted R-squared:  0.9428 
+F-statistic: 33.94 on 1 and 1 DF,  p-value: 0.1082
+
+
+## Kesimpulan
+Hilirisasi industri nikel memiliki pengaruh signifikan terhadap peningkatan nilai tambah ekspor nikel di Indonesia. Dengan kebijakan hilirisasi, seperti larangan ekspor bijih nikel mentah dan dorongan pembangunan smelter, Indonesia berhasil mengalihkan orientasi ekspor dari bahan mentah ke produk olahan nikel bernilai tinggi, seperti feronikel dan nikel matte.Langkah ini tidak hanya meningkatkan penerimaan devisa negara tetapi juga memperkuat daya saing produk nikel Indonesia di pasar global. Selain itu, hilirisasi turut mendorong pengembangan infrastruktur, penyerapan tenaga kerja lokal, dan penguatan industri pendukung. Meski demikian, tantangan seperti kebutuhan investasi besar, ketergantungan pada teknologi asing, dan dampak lingkungan perlu dikelola dengan baik agar hilirisasi dapat memberikan manfaat yang berkelanjutan.
+
+
+
+## Referensi
+Agung , M., & Waluyo, E. A. (2022). Peningkatan Investasi Dan Hilirisasi Nikel Di Indonesia. Jurnal Ilmu Sosial dan Pendidikan (JISIP).
+
+Ashar, B., Pratama, H., Hidayat, R., & Nurcahya, W. F. (2024). DAMPAK KEBIJAKAN HILIRISASI NIKEL TERHADAP PENINGKATAN PENDAPATAN NEGARA BUKAN PAJAK (MINERBA). Journal of Law, Administration, and Social Science.
+
+Haryadi, H. (2017). ANALISIS NERACA SUMBER DAYA PASIR BESI DAN BIJIH NIKEL INDONESIA. Jurnal Teknologi Mineral dan Batubara.
+
+Radhika, D. D., & Wibisana, R. A. (2023). Proteksionisme Nikel Indonesia dalam Perdagangan Dunia. Journal of Trade Development and Studies.
+
